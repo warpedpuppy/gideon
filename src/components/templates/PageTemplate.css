@@ -1,0 +1,37 @@
+#page-template-container {
+	margin: 5px 1rem;
+}
+#page-template-container h2 {
+	color: white;
+	font-size: 1.5rem;
+}
+.thumbnails {
+	display: flex;
+	width: 100%;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.thumbnail-container {
+	width: 100%;
+	min-height: 400px;
+	padding: 2rem 0;
+}
+
+
+@media (min-width: 1024px) {
+
+	#page-template-container {
+		margin: 20px 6rem
+	}
+	.thumbnail-container {
+		width: 50%;
+		min-height: 400px;
+	}
+	.thumbnail-container:nth-child(odd) {
+		padding-right: 1rem;
+	}
+	.thumbnail-container:nth-child(even) {
+		padding-left: 1rem;
+	}
+
+}

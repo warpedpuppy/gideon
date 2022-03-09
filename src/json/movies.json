@@ -1,0 +1,56 @@
+[
+    {
+        "src": "https://player.vimeo.com/video/630543642?h=6258a1e18b",
+        "width": 640,
+        "height": 360,
+        "link": "https://player.vimeo.com/video/630543642?h=6258a1e18b",
+        "title": "Maine Media Promotional Video",
+        "desc": "Behind the scenes at Maine Media Workshops and College.",
+        "thumbnail": "/bmps/20220308/thumbnails/films/ikea.png"
+    },
+    {
+        "src": "https://player.vimeo.com/video/643577789?h=7771218c99",
+        "width": 640,
+        "height": 360,
+        "link": "https://player.vimeo.com/video/643577789?h=7771218c99",
+        "title": "Sherman's Point",
+        "desc": "An intimate moment of a former couple.",
+        "thumbnail": "/bmps/20220308/thumbnails/films/musicVideo.png"
+    },
+    {
+        "src": "https://player.vimeo.com/video/644872825?h=e620019dff",
+        "width": 640,
+        "height": 360,
+        "link": "https://player.vimeo.com/video/644872825?h=e620019dff",
+        "title": "Mock Ikea Commercial",
+        "desc": "Build something.",
+        "thumbnail": "/bmps/20220308/thumbnails/films/maineMedia.png"
+    },
+    {
+        "src": "https://player.vimeo.com/video/641988666?h=25d6139ee6",
+        "width": 640,
+        "height": 360,
+        "link": "https://player.vimeo.com/video/641988666?h=25d6139ee6",
+        "title": "What You Want",
+        "desc": "Gaby Dimond (Official Music Video)",
+        "thumbnail": "/bmps/20220308/thumbnails/films/bookMaking.png"
+    },
+    {
+        "src": "https://player.vimeo.com/video/381454561",
+        "width": 640,
+        "height": 267,
+        "link": "https://vimeo.com/381454561",
+        "title": "Love Bug",
+        "desc": "A romcom about the first date.",
+        "thumbnail": "/bmps/20220308/thumbnails/films/summerMovie.png"
+    },
+    {
+        "src": "https://player.vimeo.com/video/402718143",
+        "width": 640,
+        "height": 360,
+        "link": "https://vimeo.com/402718143",
+        "title": "Book Arts at Maine Media",
+        "desc": "A promotional video about the Book Arts program at Maine Media.",
+        "thumbnail": "/bmps/20220308/thumbnails/films/sydneyMovie.png"
+    }
+]

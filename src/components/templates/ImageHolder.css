@@ -1,0 +1,14 @@
+.thumbnail {
+	/* background-color: #212b5d; */
+	border-radius: 20px;
+	width: 100%;
+	background-size: cover;
+	background-position: center;
+	cursor: pointer;
+	min-height: 400px;
+	opacity: 0;
+	transition: opacity 2s;
+}
+.thumbnail.loaded {
+	opacity: 1;
+}

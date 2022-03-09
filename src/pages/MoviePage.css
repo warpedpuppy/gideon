@@ -1,0 +1,86 @@
+.movie-shell {
+    position: relative;
+}
+
+.movie-page-background {
+    background: rgb(0, 0, 0);
+    background: linear-gradient(163deg, rgba(0, 0, 0, 0.05) 0%, rgba(0, 0, 0, 1) 100%);
+    height: 100vh;
+}
+
+.movie-page-background * {
+    background: transparent;
+}
+
+.movie-page-shell {
+    margin: 0 auto 0;
+    width: 100vw;
+    /* max-width: 768px; */
+    padding: 50px 1rem;
+}
+
+.movie-page-shell h2 {
+    text-align: left;
+    border-bottom: 1px solid grey;
+    margin-bottom: 5px;
+    font-size: 1.5rem;
+}
+
+.iFrameClass.not-loaded {
+    display: none;
+}
+
+.iFrameClass {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.movie-shell {
+    margin: 20px auto;
+    /* width: 100vw; */
+}
+
+.button-div {
+    display: flex;
+    justify-content: space-between;
+    margin: 5px 0 20px;
+}
+
+.prevNext {
+    cursor: pointer;
+}
+
+.movie-details-inner {
+    margin: 20px;
+    text-align: left;
+    display: inline-block;
+}
+
+@media (min-width:600px) {
+    /* .movie-page-shell {
+        margin: 125px auto 0;
+        width: 90%;
+        max-width: 768px;
+        padding: 0;
+    }
+    .movie-page-shell {
+        margin: 125px auto 0;
+        max-width: 768px;
+    }
+    .movie-shell {
+        margin: 20px auto;
+    }
+    .iFrameClass {
+        position: relative;
+        top: 0;
+        left: 0;
+        right: 0;
+        display: block;
+        width: 100%;
+    } */
+}
