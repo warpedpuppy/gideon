@@ -9,7 +9,7 @@ export default class Home extends Component {
         window.scrollTo(0, 0);
     }
     render() {
-		let obj = {backgroundImage: `url('/bmps/gideon.jpg')`}
+		let obj = {backgroundImage: `url('/bmps/20220308/gideon.jpg')`}
         return (
             <>
                 <div className="home-page">
