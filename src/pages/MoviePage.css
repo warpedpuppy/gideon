@@ -2,28 +2,12 @@
     position: relative;
 }
 
-.movie-page-background {
-    background: rgb(0, 0, 0);
-    background: linear-gradient(163deg, rgba(0, 0, 0, 0.05) 0%, rgba(0, 0, 0, 1) 100%);
-    height: 100vh;
-}
-
 .movie-page-background * {
     background: transparent;
 }
 
 .movie-page-shell {
-    margin: 0 auto 0;
-    width: 100vw;
-    /* max-width: 768px; */
-    padding: 50px 1rem;
-}
-
-.movie-page-shell h2 {
-    text-align: left;
-    border-bottom: 1px solid grey;
-    margin-bottom: 5px;
-    font-size: 1.5rem;
+    margin: 0 1rem;
 }
 
 .iFrameClass.not-loaded {
@@ -31,24 +15,25 @@
 }
 
 .iFrameClass {
+
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     display: block;
     width: 100%;
+	height: 100%;
     margin: 0 auto;
 }
 
-.movie-shell {
-    margin: 20px auto;
-    /* width: 100vw; */
-}
 
 .button-div {
     display: flex;
     justify-content: space-between;
-    margin: 5px 0 20px;
+    margin: 25px 0;
+	text-transform: uppercase;
+	color: white;
+	font-weight: bold;
 }
 
 .prevNext {
@@ -61,7 +46,30 @@
     display: inline-block;
 }
 
+.movie-info {
+	margin: 20px 0;
+}
+.movie-info ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	color: white;
+}
+.movie-info p {
+	color: white;
+}
+
+
+@media (min-width: 1024px) {
+	.movie-page-shell {
+		margin: 0 6rem;
+	}
+	.movie-info {
+		margin: 20px 0;
+	}
+}
 @media (min-width:600px) {
+
     /* .movie-page-shell {
         margin: 125px auto 0;
         width: 90%;

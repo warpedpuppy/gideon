@@ -12,7 +12,7 @@ const PageTemplate = props => {
 						
 						return (
 						<div key={key} className='thumbnail-container'>
-							<ImageHolder thumbnail={item.thumbnail} />
+							<ImageHolder thumbnail={item.thumbnail} title={item.title} id={key} />
 						</div>
 						)
 					})

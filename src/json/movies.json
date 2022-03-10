@@ -4,8 +4,10 @@
         "width": 640,
         "height": 360,
         "link": "https://player.vimeo.com/video/630543642?h=6258a1e18b",
-        "title": "Maine Media Promotional Video",
-        "desc": "Behind the scenes at Maine Media Workshops and College.",
+        "title": "IKEA Commercial",
+		"subtitle": "Collaborative Project for Emerson College, Fall 2021",
+		"info": "Directed | Edited | Filmed by Gideon Baeza",
+        "desc": "When you put in the effor to \"Build Something\" it can lead to so much more.",
         "thumbnail": "/bmps/20220308/thumbnails/films/ikea.png"
     },
     {
@@ -13,8 +15,10 @@
         "width": 640,
         "height": 360,
         "link": "https://player.vimeo.com/video/643577789?h=7771218c99",
-        "title": "Sherman's Point",
-        "desc": "An intimate moment of a former couple.",
+        "title": "Music Video",
+		"subtitle": "Official Music Video created for Gaby Diamond, Summer 2021",
+		"info": "Filmed | Edited by Gideon Baeza",
+        "desc": "Been like this now for just about a year. Does your heart feel the same as mine?",
         "thumbnail": "/bmps/20220308/thumbnails/films/musicVideo.png"
     },
     {
@@ -22,8 +26,10 @@
         "width": 640,
         "height": 360,
         "link": "https://player.vimeo.com/video/644872825?h=e620019dff",
-        "title": "Mock Ikea Commercial",
-        "desc": "Build something.",
+        "title": "Behind the Scenes at Maine Media",
+		"subtitle": "Week in Review, Summer 2019",
+		"info": "Filmed | Edited by Gideon Baeza",
+        "desc": "Working the Summers at Maine Media College gave me hands-on experience with workign professionals.",
         "thumbnail": "/bmps/20220308/thumbnails/films/maineMedia.png"
     },
     {
@@ -31,8 +37,10 @@
         "width": 640,
         "height": 360,
         "link": "https://player.vimeo.com/video/641988666?h=25d6139ee6",
-        "title": "What You Want",
-        "desc": "Gaby Dimond (Official Music Video)",
+        "title": "Interview of with Richard Reitz Smit",
+		"subtitle": "Summer 2019",
+		"info": "Filmed | Edited by Gideon Baeza",
+        "desc": "In my interviews I look to find what inspires people.",
         "thumbnail": "/bmps/20220308/thumbnails/films/bookMaking.png"
     },
     {
@@ -40,8 +48,10 @@
         "width": 640,
         "height": 267,
         "link": "https://vimeo.com/381454561",
-        "title": "Love Bug",
-        "desc": "A romcom about the first date.",
+        "title": "Scene from 500 Days of Summer",
+		"subtitle": "",
+		"info": "Filmed | Directed | Edited by Gideon Baeza",
+        "desc": "This assignment ad me explore a scene from one of my favorite movies.",
         "thumbnail": "/bmps/20220308/thumbnails/films/summerMovie.png"
     },
     {
@@ -49,8 +59,10 @@
         "width": 640,
         "height": 360,
         "link": "https://vimeo.com/402718143",
-        "title": "Book Arts at Maine Media",
-        "desc": "A promotional video about the Book Arts program at Maine Media.",
+        "title": "Original Piece",
+		"subtitle": "",
+		"info": "Directed | Edited | Written by Gideon Baeza",
+        "desc": "When a relationship ends the love can remain. This shows a conversation between two people who still care deeply for one another.",
         "thumbnail": "/bmps/20220308/thumbnails/films/sydneyMovie.png"
     }
 ]
