@@ -1,7 +1,7 @@
 #about-container {
 	background-color: #212b5d;
 	min-height: 2000px;
-	position: fixed;
+	position: absolute;
 	top:0;
 	left:0;
 	width: 100vw;
