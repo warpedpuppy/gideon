@@ -73,7 +73,7 @@ export default class MoviePage extends Component {
 					className="iFrameClass"
 					style={iframeStyle}
 					src={this.state.movie.src}  
-					title="movie 4" 
+					title={this.state.movie.title} 
 					
 					frameBorder="0" 
 					allow="autoplay; fullscreen" 

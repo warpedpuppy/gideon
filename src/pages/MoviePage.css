@@ -47,7 +47,7 @@
 }
 
 .movie-info {
-	margin: 20px 0;
+	margin: 20px 0 200px;
 }
 .movie-info ul {
 	list-style-type: none;
@@ -55,8 +55,16 @@
 	padding: 0;
 	color: white;
 }
+.movie-info ul li:first-child{
+	font-weight: bold;
+}
+.movie-info ul li:nth-child(2){
+	font-style: italic;
+}
 .movie-info p {
 	color: white;
+	margin: 10px 0;
+	font-size: 24px;
 }
 
 
@@ -65,7 +73,7 @@
 		margin: 0 6rem;
 	}
 	.movie-info {
-		margin: 20px 0;
+		margin: 20px 0 200px;
 	}
 }
 @media (min-width:600px) {
