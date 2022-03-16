@@ -11,6 +11,7 @@
 }
 .primary-photo {
 	opacity: 0;
+	width: calc(100vw - 20px);
 	transition: opacity 0.5s;
 	display: inline-block;
 	margin: 10px auto;
@@ -18,4 +19,15 @@
 .primary-photo.show {
 	opacity: 1;
 	transition: opacity 0.5s
+}
+
+
+@media (min-width: 1024px) {
+	.primary-photo {
+		opacity: 0;
+		width: auto;
+		transition: opacity 0.5s;
+		display: inline-block;
+		margin: 10px auto;
+	}
 }
