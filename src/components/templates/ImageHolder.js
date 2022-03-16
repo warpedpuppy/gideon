@@ -4,7 +4,7 @@ import { useHistory } from 'react-router-dom';
 
 const ImageHolder = props => {
 
-	const { thumbnail, title, id } = props;
+	const { thumbnail, title, id, type } = props;
 	let history = useHistory();
 
 	let [ loaded, setLoaded ] = useState(false)
@@ -14,7 +14,12 @@ const ImageHolder = props => {
 	let style = { backgroundImage: `url('${img.src}')`}
 
 	function viewMovie() {
-		history.push(`/movie-page/${id}`)
+		if (type === 'films') {
+			history.push(`/movie-page/${id}`)
+		} else {
+			history.push(`/photo-page/${id}`)
+		}
+		
 	}
 
 	return (

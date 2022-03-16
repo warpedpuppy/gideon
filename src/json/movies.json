@@ -1,5 +1,6 @@
 [
     {
+		"type": "films",
         "src": "https://player.vimeo.com/video/644872825?h=e620019dff",
         "width": 640,
         "height": 360,
@@ -11,6 +12,7 @@
         "thumbnail": "/bmps/20220308/thumbnails/films/ikea.png"
     },
     {
+		"type": "films",
         "src": "https://player.vimeo.com/video/641988666?h=25d6139ee6",
         "width": 640,
         "height": 360,
@@ -22,6 +24,7 @@
         "thumbnail": "/bmps/20220308/thumbnails/films/musicVideo.png"
     },
     {
+		"type": "films",
         "src": "https://player.vimeo.com/video/630543642?h=6258a1e18b",
         "width": 640,
         "height": 360,
@@ -33,6 +36,7 @@
         "thumbnail": "/bmps/20220308/thumbnails/films/maineMedia.png"
     },
     {
+		"type": "films",
         "src": "https://player.vimeo.com/video/402718143?h=0defbc8360",
         "width": 640,
         "height": 360,
@@ -44,6 +48,7 @@
         "thumbnail": "/bmps/20220308/thumbnails/films/bookMaking.png"
     },
     {
+		"type": "films",
         "src": "https://player.vimeo.com/video/668739699?h=5085bbefac",
         "width": 640,
         "height": 267,
@@ -55,6 +60,7 @@
         "thumbnail": "/bmps/20220308/thumbnails/films/summerMovie.png"
     },
     {
+		"type": "films",
         "src": "https://player.vimeo.com/video/643577789?h=7771218c99",
         "width": 640,
         "height": 360,

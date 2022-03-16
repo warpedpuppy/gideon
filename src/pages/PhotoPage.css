@@ -1,0 +1,21 @@
+.photo-page-container {
+	text-align: center;
+	margin: 50px auto 300px;
+	position: relative;
+}
+.photo-page-container .photo-loading{
+	position: absolute;
+	text-align: center;
+	width: 100%;
+	margin-top: 50px;
+}
+.primary-photo {
+	opacity: 0;
+	transition: opacity 0.5s;
+	display: inline-block;
+	margin: 10px auto;
+}
+.primary-photo.show {
+	opacity: 1;
+	transition: opacity 0.5s
+}

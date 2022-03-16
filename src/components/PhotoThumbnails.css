@@ -1,0 +1,16 @@
+.photo-page-thumbnails {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+}
+.photo-page-thumbnail {
+	width: 100px;
+	height: auto;
+	cursor: pointer;
+	opacity: 0;
+	transition: opacity 0.5s;
+}
+.photo-page-thumbnail.show {
+	opacity: 1;
+}

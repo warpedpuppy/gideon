@@ -19,8 +19,8 @@ class Header extends React.Component {
 					</div>
 					<div className="nav-links">
 						<span><Link to='/films'>films</Link></span>
-						{/* <span><Link to='/photos'>photos</Link></span> */}
-						<span> <Link to='/about'>about</Link></span>
+						<span><Link to='/photos'>photos</Link></span>
+						<span><Link to='/about'>about</Link></span>
 					</div>
 				</div>
             </nav>
