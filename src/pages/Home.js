@@ -17,7 +17,7 @@ export default class Home extends Component {
 						<div id='home-page-text'>
 							<p>I hate fucking boring bios and shit like that.</p>
 							<p>I am a filmmaker.</p>
-							<div id='home-page-photo-credit'>Hometown Camden, Maine. Photo by Darcy Aders</div>
+							<p id='home-page-photo-credit'>Photo by Darcy Aders</p>
 						</div>
 						
                 </div>
