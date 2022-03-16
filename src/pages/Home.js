@@ -15,8 +15,7 @@ export default class Home extends Component {
                 <div className="home-page">
                         <div id='home-page-background' style={obj}></div>
 						<div id='home-page-text'>
-							<p>I hate fucking boring bios and shit like that.</p>
-							<p>I am a filmmaker.</p>
+							<p>I hate fucking boring bios and shit like that. I am a filmmaker.</p>
 							<p id='home-page-photo-credit'>Photo by Darcy Aders</p>
 						</div>
 						
