@@ -9,14 +9,14 @@ export default class Home extends Component {
         window.scrollTo(0, 0);
     }
     render() {
-		let obj = {backgroundImage: `url('/bmps/20220308/gideon.jpg')`}
+		let obj = {backgroundImage: `url('/bmps/20220308/background3.png')`}
         return (
             <>
                 <div className="home-page">
                         <div id='home-page-background' style={obj}></div>
 						<div id='home-page-text'>
-							<p>I hate fucking boring bios and shit like that. I am a filmmaker.</p>
-							<p id='home-page-photo-credit'>Photo by Darcy Aders</p>
+							<p>Cultivating stories that navigate through human relationships and identity.</p>
+							<p id='home-page-photo-credit'>Photo by Claire Richards</p>
 						</div>
 						
                 </div>
