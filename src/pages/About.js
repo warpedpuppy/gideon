@@ -1,15 +1,23 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import './About.css';
 
-const About = props => {
+const About = ({linkColor, changeLinkColor}) => {
+
+	useEffect(() => {
+		changeLinkColor("white")
+	}, [linkColor, changeLinkColor])
+
 	return (
 		<section id='about-container'>
 			<div id='about-content'>
-			<div>
-				<h2>Gideon Baeza :: Filmmaker</h2>
-				<p>Email or call if you like my work and would be interested in collaborating on a project.</p>
-				<p><a href="mailto:gideonbaeza@gmail.com">gideonbaeza@gmail.com</a></p>
-				<p><a href="tel:207-230-9435">207.230.9435</a></p>
+			<div className="first-section-about">
+				<div className="first-section-text">
+					<h2>Gideon Baeza :: Director</h2>
+					<p>Email or call if you like my work and would be interested in collaborating on a project.</p>
+					<p><a href="mailto:gideonbaeza@gmail.com">gideonbaeza@gmail.com</a></p>
+					<p><a href="tel:207-230-9435">207.230.9435</a></p>
+				</div>
+				<img src="/bmps/20220308/aboutPagePortrait.png" alt="Gideon Baeza"/>
 			</div>
 			<div className='about-right-column'>
 				<div>
@@ -21,7 +29,6 @@ const About = props => {
 					</div>
 					<div>
 						<h4>Maine Media College</h4>
-						<p>Summers 2017-2020</p>
 					</div>
 				</div>
 				<div>

@@ -5,20 +5,15 @@ import Movies from '../json/movies.json';
 
 export default class MoviePage extends Component {
 
-    // constructor(props) {
-    //     super(props); 
-    //     // this.widthChange = 600;
-    //     // window.addEventListener('resize', this.updateWindowDimensions);
-    // }
-
     componentDidMount () {
 		let movie = Movies[this.props.match.params.id];
-		console.log('component did mount', movie)
 		let height = movie.height;
 		window.scrollTo(0, 0);
 		this.props.setHeight(height)
 		this.updateWindowDimensions();
+		this.props.changeLinkColor("grey")
     }
+	
     state = {
         loaded: false,
         width: 0,

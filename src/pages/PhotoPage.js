@@ -4,7 +4,8 @@ import Photos from '../json/photos.json';
 import PhotoThumbnails from '../components/PhotoThumbnails';
 
 const PhotoPage = props => {
-
+	
+    const { changeLinkColor } = props;
 	let [ photos, setPhotos ] = useState([]);
 	let [ photo, setPhoto ] = useState('');
 	let [ loaded, setLoaded ] = useState(false)
@@ -20,7 +21,9 @@ const PhotoPage = props => {
 		changePhoto(temp[0]);
 	}, [props])
 	
-
+	useEffect(() => {
+		changeLinkColor("grey")
+	}, [changeLinkColor])
 
 	function changePhoto(str, number) {
 		setLoaded(false);

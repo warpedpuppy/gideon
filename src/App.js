@@ -10,28 +10,36 @@ import Footer from './components/Footer';
 import Movies from './pages/Movies';
 import Photos from './pages/Photos';
 import About from './pages/About'
+
 class App extends React.Component {
 
   state = {
-    movieHeight: 0
+    movieHeight: 0,
+	linkColor: "grey"
   }
+
+  changeLinkColor = (linkColor) => {
+	  this.setState({linkColor})
+  }
+
   setHeight = (movieHeight) => {
     this.setState({movieHeight})
   }
   
   render () {
+
     return (
       <div className="App">
         
-        <Menu />
+        <Menu linkColor={this.state.linkColor} />
           <main>
 			<Switch>
-				<Route exact path="/" component={Home} />
-				<Route path="/films" component={Movies} />
-				<Route path="/photos" component={Photos} />
-				<Route path="/about" component={About} />
-				<Route path="/movie-page/:id" render={ (props) => <MoviePage {...props} setHeight={this.setHeight} /> } />
-				<Route path="/photo-page/:id" render={ (props) => <PhotoPage {...props} /> } />
+				<Route exact path="/" render={ () => <Home changeLinkColor={this.changeLinkColor} /> } />
+				<Route path="/films" render={ () => <Movies changeLinkColor={this.changeLinkColor}/> } />
+				<Route path="/photos" render={ () => <Photos changeLinkColor={this.changeLinkColor} /> } />
+				<Route path="/about" render={ () => <About  linkColor={this.state.linkColor} changeLinkColor={this.changeLinkColor} /> } />
+				<Route path="/movie-page/:id" render={ (props) => <MoviePage {...props} setHeight={this.setHeight} changeLinkColor={this.changeLinkColor}/> } />
+				<Route path="/photo-page/:id" render={ (props) => <PhotoPage {...props} changeLinkColor={this.changeLinkColor} /> } />
 				<Route component={NotFound} />
 			</Switch>
           </main>

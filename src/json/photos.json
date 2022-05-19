@@ -21,10 +21,10 @@
     },
     {
 		"type": "photos",
-		"total": 9,
+		"total": 4,
         "width": 640,
         "height": 360,
-        "title": "Skateboarding",
+        "title": "Parting Ways",
         "desc": "Build something.",
 		"root": "skateboarding",
         "thumbnail": "/bmps/20220308/thumbnails/photography/skateBoard.png"
@@ -54,7 +54,7 @@
 		"total": 3,
         "width": 640,
         "height": 360,
-        "title": "Scenes from Maine",
+        "title": "Maine",
         "desc": "A promotional video about the Book Arts program at Maine Media.",
 		"root": "ocean",
         "thumbnail": "/bmps/20220308/thumbnails/photography/beach.png"

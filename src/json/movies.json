@@ -7,9 +7,21 @@
         "link": "https://player.vimeo.com/video/644872825?h=e620019dff",
         "title": "IKEA Commercial",
 		"subtitle": "Collaborative Project for Emerson College, Fall 2021",
-		"info": "Directed | Edited | Filmed by Gideon Baeza",
-        "desc": "When you put in the effor to \"Build Something\" it can lead to so much more.",
+		"info": "Directed | Written | Edited by Gideon Baeza",
+        "desc": "When you put in the effort to \"Build Something\" it can lead to so much more.",
         "thumbnail": "/bmps/20220308/thumbnails/films/ikea.png"
+    },
+	{
+		"type": "films",
+        "src": "https://player.vimeo.com/video/643577789?h=7771218c99",
+        "width": 640,
+        "height": 360,
+        "link": "https://player.vimeo.com/video/643577789?h=7771218c99",
+        "title": "Sherman's Point",
+		"subtitle": "",
+		"info": "Directed | Edited | Written by Gideon Baeza",
+        "desc": "This short explores an ex-couple reconciling before they part ways.",
+        "thumbnail": "/bmps/20220308/thumbnails/films/sydneyMovie.png"
     },
     {
 		"type": "films",
@@ -32,7 +44,7 @@
         "title": "Behind the Scenes at Maine Media",
 		"subtitle": "Week in Review, Summer 2019",
 		"info": "Filmed | Edited by Gideon Baeza",
-        "desc": "Working the Summers at Maine Media College gave me hands-on experience with workign professionals.",
+        "desc": "Working the Summers at Maine Media College gave me hands-on experience with working professionals.",
         "thumbnail": "/bmps/20220308/thumbnails/films/maineMedia.png"
     },
     {
@@ -44,7 +56,7 @@
         "title": "Interview of with Richard Reitz Smith",
 		"subtitle": "Summer 2019",
 		"info": "Filmed | Edited by Gideon Baeza",
-        "desc": "In my interviews I look to find what inspires people.",
+        "desc": "",
         "thumbnail": "/bmps/20220308/thumbnails/films/bookMaking.png"
     },
     {
@@ -55,20 +67,8 @@
         "link": "https://player.vimeo.com/video/668739699?h=5085bbefac",
         "title": "Scene from 500 Days of Summer",
 		"subtitle": "",
-		"info": "Filmed | Directed | Edited by Gideon Baeza",
-        "desc": "This assignment ad me explore a scene from one of my favorite movies.",
+		"info": "Directed | Filmed | Edited by Gideon Baeza",
+        "desc": "",
         "thumbnail": "/bmps/20220308/thumbnails/films/summerMovie.png"
-    },
-    {
-		"type": "films",
-        "src": "https://player.vimeo.com/video/643577789?h=7771218c99",
-        "width": 640,
-        "height": 360,
-        "link": "https://player.vimeo.com/video/643577789?h=7771218c99",
-        "title": "Original Piece",
-		"subtitle": "",
-		"info": "Directed | Edited | Written by Gideon Baeza",
-        "desc": "When a relationship ends the love can remain. This shows a conversation between two people who still care deeply for one another.",
-        "thumbnail": "/bmps/20220308/thumbnails/films/sydneyMovie.png"
     }
 ]

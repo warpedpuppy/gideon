@@ -7,6 +7,7 @@ export default class Home extends Component {
     }
     componentDidMount = () => {
         window.scrollTo(0, 0);
+		this.props.changeLinkColor("grey")
     }
     render() {
 		let obj = {backgroundImage: `url('/bmps/20220308/background3.png')`}

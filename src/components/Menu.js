@@ -3,8 +3,6 @@ import './Menu.css';
 import { withRouter, Link } from 'react-router-dom';
 class Header extends React.Component {
 
-   
-    
     render () {
         return (
             <nav className="nav-wrapper">
@@ -17,9 +15,9 @@ class Header extends React.Component {
 						<span></span>
 						<span></span>
 					</div>
-					<div className="nav-links">
-						<span><Link to='/films'>films</Link></span>
-						<span><Link to='/photos'>photos</Link></span>
+					<div className={`nav-links ${ this.props.linkColor === "white" ? 'about-page' : ''}`}>
+						<span><Link to='/films'>film</Link></span>
+						<span><Link to='/photos'>photo</Link></span>
 						<span><Link to='/about'>about</Link></span>
 					</div>
 				</div>

@@ -5,9 +5,15 @@ import PhotosJSON from '../json/photos.json';
 
 const Photos = props => {
 
+	const { changeLinkColor } = props;
+
     useEffect(() => {
         window.scrollTo(0, 0);
     }, [])
+
+	useEffect(() => {
+		changeLinkColor("grey")
+	}, [changeLinkColor])
 
 	return (
          <PageTemplate 
