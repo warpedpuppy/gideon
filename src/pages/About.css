@@ -25,6 +25,7 @@
 	display: block;
 	margin: 0 auto;
 	border: 1px solid white;
+	width: 70%;
 }
 #about-content h3 {
 	font-size: 1.25rem;
@@ -55,9 +56,11 @@
 .about-right-column div p {
 	margin: 0;
 }
-.about-right-column > div:nth-child(2) {
+.about-right-column > div:nth-child(2),
+.about-right-column > div:nth-child(3) {
 	margin-top: 50px;
 }
+
 @media (min-width: 1024px) {
 	#about-content {
 		margin: 0 6rem;
@@ -68,5 +71,8 @@
 	}
 	.about-right-column {
 		margin-top: 0;
+	}
+	.first-section-about .first-section-text {
+		margin: 0;
 	}
 }

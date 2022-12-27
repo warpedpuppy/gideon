@@ -17,7 +17,7 @@ class Header extends React.Component {
 					</div>
 					<div className={`nav-links ${ this.props.linkColor === "white" ? 'about-page' : ''}`}>
 						<span><Link to='/films'>film</Link></span>
-						<span><Link to='/photos'>photo</Link></span>
+						{/* <span><Link to='/photos'>photo</Link></span> */}
 						<span><Link to='/about'>about</Link></span>
 					</div>
 				</div>

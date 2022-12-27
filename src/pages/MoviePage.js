@@ -24,7 +24,7 @@ export default class MoviePage extends Component {
     nextMovie = (e) => {
         e.preventDefault();
         let plusOne = +this.props.match.params.id + 1;
-        let newMovie = Movies[plusOne] ? plusOne : 1;
+        let newMovie = Movies[plusOne] ? plusOne : 0;
         this.props.history.push(`/movie-page/${newMovie}`)
         this.setState({movie:  Movies[newMovie]});
         this.setState({loaded: false})
