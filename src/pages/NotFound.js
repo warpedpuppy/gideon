@@ -1,15 +1,13 @@
-import React, { Component } from 'react';
+import { useEffect } from 'react';
 import './NotFound.css';
-export default class NotFound extends Component {
+import { useNavigate } from "react-router-dom";
 
-    componentDidMount = () => {
-        this.props.history.push('/')
-    }
-    render() {
-        return (
-            <div>
-                <h1 class="notFound">not found</h1>
-            </div>
-        )
-    }
+const NotFound = () => {
+	let navigate = useNavigate();
+	useEffect(() => {
+		navigate('/')
+	}, [navigate]);
+
+	return <h1 class="notFound">not found</h1>
 }
+export default NotFound;

@@ -1,91 +1,93 @@
-import React, { Component } from 'react'
+import { useEffect, useState } from 'react'
 import LoadingGraphic from '../components/LoadingGraphic';
 import './MoviePage.css';
 import Movies from '../json/movies.json';
+import { useParams } from 'react-router-dom';
+import { useNavigate } from "react-router-dom";
+const MoviePage = ({ changeLinkColor }) => {
 
-export default class MoviePage extends Component {
-
-    componentDidMount () {
-		let movie = Movies[this.props.match.params.id];
-		let height = movie.height;
+	let { id } = useParams();
+	let navigate = useNavigate();
+    useEffect( () => {
 		window.scrollTo(0, 0);
-		this.props.setHeight(height)
-		this.updateWindowDimensions();
-		this.props.changeLinkColor("grey")
-    }
-	
-    state = {
-        loaded: false,
-        width: 0,
-        height: 0,
-        browserWidth: 0,
-        movie: Movies[this.props.match.params.id]
-    }
-    nextMovie = (e) => {
+		updateWindowDimensions();
+    }, [])
+
+	useEffect( () => {
+		changeLinkColor("grey")
+    }, [changeLinkColor])
+
+	const [ loaded, setLoaded ] = useState(false);
+	const [ width, setWidth ] = useState(0);
+	const [ movie, setMovie ] = useState(Movies[id])
+    
+    const nextMovie = e => {
         e.preventDefault();
-        let plusOne = +this.props.match.params.id + 1;
+        let plusOne = +id + 1;
         let newMovie = Movies[plusOne] ? plusOne : 0;
-        this.props.history.push(`/movie-page/${newMovie}`)
-        this.setState({movie:  Movies[newMovie]});
-        this.setState({loaded: false})
+        navigate(`/movie-page/${newMovie}`);
+        setMovie(Movies[newMovie]);
+        setLoaded(false);
     }
-    previousMovie = (e) => {
+    const previousMovie = e => {
         e.preventDefault();
         let length = Movies.length;
-        let minusOne = +this.props.match.params.id - 1;
+        let minusOne = +id - 1;
         let newMovie = Movies[minusOne] ? minusOne : length - 1;
-        this.props.history.push(`/movie-page/${newMovie}`)
-        this.setState({movie:  Movies[newMovie]});
-        this.setState({loaded: false})
+        navigate(`/movie-page/${newMovie}`);
+        setMovie(Movies[newMovie]);
+        setLoaded(false);
     }
-    loadComplete = () => {
-       this.setState({loaded: true, width: window.innerWidth, height: window.innerHeight})
+    const loadComplete = () => {
+		setLoaded(true);
+		setWidth(window.innerWidth);
     }
-    updateWindowDimensions = () => {
-       this.setState({ width: window.innerWidth, height: window.innerHeight });
+    const updateWindowDimensions = () => {
+		setWidth(window.innerWidth);
     }
-    render() {
-		let iframeStyle  = {
-            width: '100%',
-            height: '100%',
-			position: 'absolute',
-			top: '0',
-			left: '0'
-        }
-		let paddingTop =  (+this.state.movie.height / +this.state.movie.width) * 100;
-		
-        return (
-            <div className="movie-page-background">
-            <section className="movie-page-shell">
-                <div className="button-div">
-                    <span className="prevNext" onClick={this.previousMovie}>previous</span>
-                    <span className="prevNext" onClick={this.nextMovie}>next</span>
-                </div>
-				<div className="movie-shell" style={{paddingTop: `${paddingTop}%`, position: 'relative'}}>
-					<LoadingGraphic w={iframeStyle.width} h={iframeStyle.height} loaded={this.state.loaded} browserWidth={this.state.width} />
-					<iframe 
-					id="iframe"
-					className="iFrameClass"
-					style={iframeStyle}
-					src={this.state.movie.src}  
-					title={this.state.movie.title} 
-					
-					frameBorder="0" 
-					allow="autoplay; fullscreen" 
-					onLoad={ () => this.loadComplete() }
-					allowFullScreen></iframe>
-					
-				</div>
-				<div className='movie-info'>
-					<ul>
-						<li>{this.state.movie.title}</li>
-						<li>{this.state.movie.subtitle}</li>
-						<li>{this.state.movie.info}</li>
-					</ul>
-					<p>{this.state.movie.desc}</p>
-				</div>
-            </section>
-            </div>
-        )
-    }
+
+	let iframeStyle  = {
+		width: '100%',
+		height: '100%',
+		position: 'absolute',
+		top: '0',
+		left: '0'
+	}
+	let paddingTop =  (+movie.height / +movie.width) * 100;
+	
+	return (
+		<div className="movie-page-background">
+		<section className="movie-page-shell">
+			<div className="button-div">
+				<span className="prevNext" onClick={ previousMovie }>previous</span>
+				<span className="prevNext" onClick={ nextMovie }>next</span>
+			</div>
+			<div className="movie-shell" style={{paddingTop: `${paddingTop}%`, position: 'relative'}}>
+				<LoadingGraphic w={iframeStyle.width} h={iframeStyle.height} loaded={loaded} browserWidth={width} />
+				<iframe 
+				id="iframe"
+				className="iFrameClass"
+				style={iframeStyle}
+				src={movie.src}  
+				title={movie.title} 
+				
+				frameBorder="0" 
+				allow="autoplay; fullscreen" 
+				onLoad={ () => loadComplete() }
+				allowFullScreen></iframe>
+				
+			</div>
+			<div className='movie-info'>
+				<ul>
+					<li>{movie.title}</li>
+					<li>{movie.subtitle}</li>
+					<li>{movie.info}</li>
+				</ul>
+				<p>{movie.desc}</p>
+			</div>
+		</section>
+		</div>
+	)
+
 }
+export default MoviePage;

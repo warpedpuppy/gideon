@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 import './ImageHolder.css';
-import { useHistory } from 'react-router-dom';
+import { useNavigate } from "react-router-dom";
 
 const ImageHolder = props => {
 
 	const { thumbnail, title, id, type } = props;
-	let history = useHistory();
+	let navigate = useNavigate();
 
 	let [ loaded, setLoaded ] = useState(false)
 	let img = new Image();
@@ -15,9 +15,9 @@ const ImageHolder = props => {
 
 	function viewMovie() {
 		if (type === 'films') {
-			history.push(`/movie-page/${id}`)
+			navigate(`/movie-page/${id}`)
 		} else {
-			history.push(`/photo-page/${id}`)
+			navigate(`/photo-page/${id}`)
 		}
 		
 	}

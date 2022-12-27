@@ -1,53 +1,43 @@
-import React from 'react'
+import { useState } from 'react';
 import './App.css';
-import { Route, Switch } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 import Menu from './components/Menu';
 import Home from './pages/Home';
 import NotFound from './pages/NotFound';
 import MoviePage from './pages/MoviePage';
-import PhotoPage from './pages/PhotoPage';
 import Footer from './components/Footer';
 import Movies from './pages/Movies';
-import Photos from './pages/Photos';
 import About from './pages/About'
 
-class App extends React.Component {
+const App = () => {
 
-  state = {
-    movieHeight: 0,
-	linkColor: "grey"
+//   const [ movieHeight, setMovieHeight ] = useState(0);
+  const [ linkColor, setLinkColor ] = useState("grey");
+
+  const changeLinkColor = (linkColor) => {
+	setLinkColor(linkColor)
   }
 
-  changeLinkColor = (linkColor) => {
-	  this.setState({linkColor})
-  }
-
-  setHeight = (movieHeight) => {
-    this.setState({movieHeight})
-  }
+//   const setHeight = (movieHeight) => {
+//     setMovieHeight(movieHeight)
+//   }
   
-  render () {
-
-    return (
-      <div className="App">
-        
-        <Menu linkColor={this.state.linkColor} />
-          <main>
-			<Switch>
-				<Route exact path="/" render={ () => <Home changeLinkColor={this.changeLinkColor} /> } />
-				<Route path="/films" render={ () => <Movies changeLinkColor={this.changeLinkColor}/> } />
-				<Route path="/photos" render={ () => <Photos changeLinkColor={this.changeLinkColor} /> } />
-				<Route path="/about" render={ () => <About  linkColor={this.state.linkColor} changeLinkColor={this.changeLinkColor} /> } />
-				<Route path="/movie-page/:id" render={ (props) => <MoviePage {...props} setHeight={this.setHeight} changeLinkColor={this.changeLinkColor}/> } />
-				<Route path="/photo-page/:id" render={ (props) => <PhotoPage {...props} changeLinkColor={this.changeLinkColor} /> } />
-				<Route component={NotFound} />
-			</Switch>
-          </main>
-		  <Footer />
-      </div>
-    );
-  }
- 
+return (
+	<div className="App">
+		<Menu linkColor={ linkColor } />
+		<main>
+			<Routes>
+				<Route path="/" element={ <Home changeLinkColor={ changeLinkColor } />} />
+				<Route path="/films" element={ <Movies changeLinkColor={ changeLinkColor }/> } />
+				<Route path="/about" element={  <About  linkColor={ linkColor } changeLinkColor={ changeLinkColor } /> } />
+				<Route path="/movie-page/:id" element={ <MoviePage changeLinkColor={ changeLinkColor }/> } />
+				<Route path="*" element={ <NotFound /> } />
+			</Routes>
+		</main>
+		<Footer />
+	</div>
+);
+  
 }
 
 export default App;

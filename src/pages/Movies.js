@@ -15,10 +15,7 @@ const Movies = props => {
 		changeLinkColor("grey")
 	}, [changeLinkColor])
 
-	return (
-		<PageTemplate subtitle='My film work explores the interplay of love and life.' xml={MoviesJSON} />
-	)
-
+	return <PageTemplate subtitle='My film work explores the interplay of love and life.' xml={ MoviesJSON } />
 }
 
 export default Movies;
