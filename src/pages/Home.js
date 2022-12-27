@@ -10,15 +10,15 @@ export default class Home extends Component {
 		this.props.changeLinkColor("grey")
     }
     render() {
-		let obj = {backgroundImage: `url('/bmps/20220308/background3.png')`}
+		let obj = {backgroundImage: `url('/bmps/20221227/cover_20221227.png')`}
         return (
             <>
                 <div className="home-page">
                         <div id='home-page-background' style={obj}></div>
-						<div id='home-page-text'>
+						{/* <div id='home-page-text'>
 							<p>Cultivating stories that navigate through human relationships and identity.</p>
 							<p id='home-page-photo-credit'>Photo by Claire Richards</p>
-						</div>
+						</div> */}
 						
                 </div>
             </>

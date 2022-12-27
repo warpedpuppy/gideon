@@ -5,7 +5,7 @@ const PageTemplate = props => {
 	const { subtitle, xml } = props
 	return (
 		<section id="page-template-container">
-			<h2>{ subtitle }</h2>
+			{/* <h2>{ subtitle }</h2> */}
 			<div className='thumbnails'>
 				{
 					xml.map( (item, key) => {

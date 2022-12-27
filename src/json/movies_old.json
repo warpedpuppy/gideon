@@ -1,0 +1,74 @@
+[
+    {
+		"type": "films",
+        "src": "https://player.vimeo.com/video/644872825?h=e620019dff",
+        "width": 640,
+        "height": 360,
+        "link": "https://player.vimeo.com/video/644872825?h=e620019dff",
+        "title": "IKEA Commercial",
+		"subtitle": "Collaborative Project for Emerson College, Fall 2021",
+		"info": "Directed | Written | Edited by Gideon Baeza",
+        "desc": "When you put in the effort to \"Build Something\" it can lead to so much more.",
+        "thumbnail": "/bmps/20220308/thumbnails/films/ikea.png"
+    },
+	{
+		"type": "films",
+        "src": "https://player.vimeo.com/video/643577789?h=7771218c99",
+        "width": 640,
+        "height": 360,
+        "link": "https://player.vimeo.com/video/643577789?h=7771218c99",
+        "title": "Sherman's Point",
+		"subtitle": "",
+		"info": "Directed | Edited | Written by Gideon Baeza",
+        "desc": "This short explores an ex-couple reconciling before they part ways.",
+        "thumbnail": "/bmps/20220308/thumbnails/films/sydneyMovie.png"
+    },
+    {
+		"type": "films",
+        "src": "https://player.vimeo.com/video/641988666?h=25d6139ee6",
+        "width": 640,
+        "height": 360,
+        "link": "https://player.vimeo.com/video/641988666?h=25d6139ee6",
+        "title": "Music Video",
+		"subtitle": "Official Music Video created for Gaby Diamond, Summer 2021",
+		"info": "Filmed | Edited by Gideon Baeza",
+        "desc": "Been like this now for just about a year. Does your heart feel the same as mine?",
+        "thumbnail": "/bmps/20220308/thumbnails/films/musicVideo.png"
+    },
+    {
+		"type": "films",
+        "src": "https://player.vimeo.com/video/630543642?h=6258a1e18b",
+        "width": 640,
+        "height": 360,
+        "link": "https://player.vimeo.com/video/630543642?h=6258a1e18b",
+        "title": "Behind the Scenes at Maine Media",
+		"subtitle": "Week in Review, Summer 2019",
+		"info": "Filmed | Edited by Gideon Baeza",
+        "desc": "Working the Summers at Maine Media College gave me hands-on experience with working professionals.",
+        "thumbnail": "/bmps/20220308/thumbnails/films/maineMedia.png"
+    },
+    {
+		"type": "films",
+        "src": "https://player.vimeo.com/video/402718143?h=0defbc8360",
+        "width": 640,
+        "height": 360,
+        "link": "https://player.vimeo.com/video/402718143?h=0defbc8360",
+        "title": "Interview of with Richard Reitz Smith",
+		"subtitle": "Summer 2019",
+		"info": "Filmed | Edited by Gideon Baeza",
+        "desc": "",
+        "thumbnail": "/bmps/20220308/thumbnails/films/bookMaking.png"
+    },
+    {
+		"type": "films",
+        "src": "https://player.vimeo.com/video/668739699?h=5085bbefac",
+        "width": 640,
+        "height": 267,
+        "link": "https://player.vimeo.com/video/668739699?h=5085bbefac",
+        "title": "Scene from 500 Days of Summer",
+		"subtitle": "",
+		"info": "Directed | Filmed | Edited by Gideon Baeza",
+        "desc": "",
+        "thumbnail": "/bmps/20220308/thumbnails/films/summerMovie.png"
+    }
+]

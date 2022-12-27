@@ -15,6 +15,7 @@
 	opacity: 1;
 }
 .thumbnail-cover {
+	border-radius: 20px;
 	background-color: #212b5d;
 	color: white;
 	position: absolute;
