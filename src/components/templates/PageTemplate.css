@@ -1,5 +1,5 @@
 #page-template-container {
-	margin: 5px 1rem;
+	margin: 5px 1rem 100px;
 }
 #page-template-container h2 {
 	color: white;
@@ -20,7 +20,7 @@
 @media (min-width: 1024px) {
 
 	#page-template-container {
-		margin: 20px 6rem
+		margin: 20px 6rem 200px;
 	}
 	.thumbnail-container {
 		width: 50%;
