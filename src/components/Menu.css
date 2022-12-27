@@ -20,6 +20,12 @@
 	padding: 0 1rem;
 }
 
+#nav-content a img {
+	width: 128px;
+	/* height: 145px; */
+
+}
+
 .nav-hamburger {
     display: block;
     width: 40px;

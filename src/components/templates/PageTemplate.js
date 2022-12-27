@@ -16,11 +16,8 @@ const PageTemplate = props => {
 						)
 					})
 				}
-				
 			</div>
 		</section>
-	
-	
 	)
 }
 
