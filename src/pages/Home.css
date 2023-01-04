@@ -7,6 +7,12 @@
 	top: 0;
 	left: 0;
 	background-position: center center;
+	opacity: 0;;
+	transition: opacity 0.5s;
+}
+
+#home-page-background.image-loaded {
+	opacity: 1;
 }
 
 #home-page-text {

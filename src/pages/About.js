@@ -1,10 +1,17 @@
-import React, {useEffect} from 'react';
+import {useEffect, useState } from 'react';
 import './About.css';
 
 const About = ({linkColor, changeLinkColor}) => {
 
+	const [ imageLoaded, setImageLoaded ] = useState('');
+
 	useEffect(() => {
-		changeLinkColor("white")
+		changeLinkColor("white");
+
+		let img = new Image();
+		img.src = "/bmps/20221227/gideon_portrait.jpg";
+		img.onload = e => setImageLoaded("/bmps/20221227/gideon_portrait.jpg")
+
 	}, [linkColor, changeLinkColor])
 
 	return (
@@ -17,7 +24,7 @@ const About = ({linkColor, changeLinkColor}) => {
 					<p><a href="mailto:gideonbaeza@gmail.com">gideonbaeza@gmail.com</a></p>
 					<p><a href="tel:207-230-9435">207.230.9435</a></p>
 				</div>
-				<img src="/bmps/20221227/gideon_portrait.jpg" alt="Gideon Baeza"/>
+				<div className='imgCont'><img src={ imageLoaded } className={`${imageLoaded !== '' ? 'image-loaded' : ''}`} alt="Gideon Baeza"/></div>
 			</div>
 			<div className='about-right-column'>
 				<div>
