@@ -11,6 +11,24 @@
 	position: relative;
 	overflow: hidden;
 }
+.thumbnail-loading {
+	/* background-color: #212b5d; */
+	border-radius: 20px;
+	width: 100%;
+	background-size: cover;
+	background-position: center;
+	cursor: pointer;
+	min-height: 400px;
+	position: relative;
+	overflow: hidden;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.thumbnail-loading div {
+	color: white;
+	font-weight: bold;
+}
 .thumbnail.loaded {
 	opacity: 1;
 }

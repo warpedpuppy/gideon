@@ -22,6 +22,14 @@ const ImageHolder = props => {
 		
 	}
 
+	if (loaded === false ) {
+		return (
+			<div className="thumbnail-loading" >
+				<div >loading. . . </div>
+			</div>
+	)
+	}
+
 	return (
 			<div className={`thumbnail ${ loaded ? 'loaded' : ''}`} style={ style } onClick={ viewMovie }>
 				<div className='thumbnail-cover'>{ title }</div>
