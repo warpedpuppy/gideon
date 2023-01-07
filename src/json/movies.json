@@ -9,7 +9,7 @@
 		"subtitle": "",
 		"info": "Directed | Edited | Written by Gideon Baeza",
         "desc": "",
-        "thumbnail": "/bmps/20220308/thumbnails/films/seeYourselfDifferently.png"
+        "thumbnail": "/bmps/20220308/thumbnails/films/seeYourselfDifferently_thumbnail.png"
     },
 	{
 		"type": "films",
@@ -21,7 +21,7 @@
 		"subtitle": "Collaborative Project for Emerson College, Fall 2021",
 		"info": "Directed | Written | Edited by Gideon Baeza",
         "desc": "When you put in the effort to \"Build Something\" it can lead to so much more.",
-        "thumbnail": "/bmps/20220308/thumbnails/films/ikea2.png"
+        "thumbnail": "/bmps/20220308/thumbnails/films/ikea_thumbnail.png"
     },
 	{
 		"type": "films",
@@ -33,7 +33,7 @@
 		"subtitle": "",
 		"info": "Directed | Edited | Written by Gideon Baeza",
         "desc": "This short explores an ex-couple reconciling before they part ways.",
-        "thumbnail": "/bmps/20220308/thumbnails/films/shermansPoint.png"
+        "thumbnail": "/bmps/20220308/thumbnails/films/shermansPoint_thumbnail.png"
     },
 	{
 		"type": "films",
@@ -45,6 +45,6 @@
 		"subtitle": "",
 		"info": "Performance by Gideon Baeza | Edited by Gideon Baeza",
         "desc": "",
-        "thumbnail": "/bmps/20220308/thumbnails/films/candlepin.png"
+        "thumbnail": "/bmps/20220308/thumbnails/films/candlepin_thumbnail.png"
     }
 ]
