@@ -1,8 +1,8 @@
 #home-page-background {
 	background-size: cover;
 	min-width: 100vw;
-	min-height: 100vh;
-	position: fixed;
+	min-height: 110vh;
+	position: absolute;
 	z-index: -1;
 	top: 0;
 	left: 0;
