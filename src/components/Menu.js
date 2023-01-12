@@ -1,9 +1,11 @@
-import React from 'react'
+import { useState } from 'react'
 import './Menu.css';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 const Header = ({ linkColor}) => {
+		const location = useLocation();
+	
         return (
-            <nav className="nav-wrapper">
+            <nav className={`nav-wrapper ${location.pathname.includes('about') || location.pathname.includes('films') ? '' : 'home'}`}>
 				<div id='nav-top-band'></div>
 				<div id='nav-content'>
 					<Link to='/'><img src={'/bmps/20220308/logo.png'} alt='gideon baeza logo' /></Link>

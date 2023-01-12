@@ -4,11 +4,14 @@
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    position: fixed;
+    position: relative;
 	top: 0;
 	left: 0;
 	z-index: 10;
     overflow: hidden;
+}
+.home.nav-wrapper {
+	position: fixed;
 }
 #nav-top-band {
 	background-color: #ebebee;
@@ -146,13 +149,11 @@
 
 @media (min-width: 1024px) {
 	#nav-content {
-		/* padding: 0; */
 		padding-left: 6rem;
 		padding-right: 6rem;
 	}
     .nav-wrapper {
         flex-wrap: nowrap;
-		
     }
     .nav-hamburger {
         display: none;
