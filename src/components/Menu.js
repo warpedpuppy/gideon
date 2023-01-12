@@ -4,7 +4,7 @@ const Header = ({ linkColor}) => {
 		const location = useLocation();
 	
         return (
-            <nav className={`nav-wrapper ${location.pathname.includes('about') || location.pathname.includes('films') ? '' : 'home'}`}>
+            <nav className={`nav-wrapper ${location.pathname.includes('about') || location.pathname.includes('films') || location.pathname.includes('movie-page')? '' : 'home'}`}>
 				<div id='nav-top-band'></div>
 				<div id='nav-content'>
 					<Link to='/'><img src={'/bmps/20220308/logo.png'} alt='gideon baeza logo' /></Link>
