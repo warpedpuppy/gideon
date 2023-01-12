@@ -1,7 +1,9 @@
 .movie-shell {
     position: relative;
 }
-
+.movie-page-background {
+	margin-top: 250px;
+}
 .movie-page-background * {
     background: transparent;
 }
